@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+ 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+input, button, textarea, select{
+    font: inherit; 
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Quicksand", Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    background-color: #FFFFFF;
+    color: #000000;
+    min-height: 100vh;
+    min-height: 100dvh;
+}
+
+h1 {
+    margin: 50px auto;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.formulario {
+    border: 2pt solid black;
+    border-radius: 10pt;
+    padding: 20px;
+    width: 400px;
+    margin: 10px auto;
+    background-color: #BBC3F2;
+}
+
+.formulario--item {
+    margin: 10px 0;
+}
+
+label {
+    font-weight: bold;
+}
+
+#email {
+    margin-left: 5px;
+}
+
+.button {
+    margin: 20px auto;
+    padding: 5px 50px;
+    background-color: #BBC3F2;
+    font-weight: bold;
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 1.5rem;
+    background-color: #BBC3F2;
+}
+
+@media (max-width: 447px){
+    .formulario {
+        width: 250px;
+        margin: auto;
+    }
+}
+
+@media (min-width: 820px){
+    body{
+        font-size: 1.5em;
+    }
+    footer{
+        font-size: 1.2em;
+    }
+}
