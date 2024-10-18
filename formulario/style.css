@@ -39,6 +39,7 @@ main {
     width: 400px;
     margin: 10px auto;
     background-color: #BBC3F2;
+
 }
 
 .formulario--item {
@@ -54,32 +55,35 @@ label {
 }
 
 .button {
-    margin: 20px auto;
+    margin: 25px auto;
     padding: 5px 50px;
     background-color: #BBC3F2;
     font-weight: bold;
+    transition: background-color 1s 5ms;
+}
+
+.button:hover {
+    background-color: #9299bd;
 }
 
 footer {
     width: 100%;
     position: fixed;
     bottom: 0;
-    padding: 1.5rem;
+    padding: 1em;
     background-color: #BBC3F2;
+    font-size: 12pt;
 }
 
 @media (max-width: 447px){
     .formulario {
-        width: 250px;
+        width: 280px;
         margin: auto;
     }
 }
 
-@media (min-width: 820px){
-    body{
-        font-size: 1.5em;
-    }
-    footer{
-        font-size: 1.2em;
+@media (min-width: 1024px){
+    body, footer{
+        font-size: 1.05em;
     }
 }
