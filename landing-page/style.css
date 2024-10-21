@@ -1,0 +1,173 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: royalblue;
+    padding: 20px 0;
+}
+
+h1 {
+    margin-left: 20px;
+}
+
+nav {
+    margin-left: 20px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #C78C19;
+    text-decoration: underline;
+}
+
+.servicos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.servicos ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.servicos li {
+    flex: 1;
+    text-align: center;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.servicos li:hover {
+    border-color: #C78C19;
+}
+
+.servicos li:active {
+    border-color: #088C19;    
+}
+
+.servicos li:hover h2 {
+    font-size: 34px;
+}
+
+.servicos h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.servico-descricao {
+    font-size: 18px;
+}
+
+.servico-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+/* Seção do formulário */
+form {
+    margin: 40px auto;
+    width: 940px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-padrao {
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+/* Seção de benefícios */
+.sobre {
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.mapa {
+    width: 920px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer {
+    background-color: royalblue;
+    padding: 40px 0;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Media Query */
+@media screen and (max-width: 480px) {
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: 90%;
+        padding: 0 20px;
+    }
+
+    .servicos ul {
+        flex-direction: column;
+    }
+
+    .conteudo-beneficios {
+        flex-direction: column;
+    }
+
+    .lista-beneficios, .imagem-beneficios {
+        flex: 1 1 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}

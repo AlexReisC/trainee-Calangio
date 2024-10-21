@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia UFCA</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Barbearia UFCA</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="sobre">
+            <h2 class="titulo-principal">Sobre a Barbearia UFCA</h2>
+            <p>
+                Localizada no bairro Cidade Universitária a <strong>Barbearia UFCA </strong>traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia UFCA já é destaque na cidade e conquista novos clientes a cada dia.
+            </p>
+
+            <p>
+                Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.
+            </p>
+        </section>
+
+        <section class="mapa">
+            <h3>Nosso estabelecimento</h3>
+            
+        </section>
+
+        <section class="servicos">
+            <h2 class="titulo-principal">Nossos serviços</h2>
+            <ul>
+                <li>
+                    <h2>Cabelo</h2>
+                    <img src="imagens/cabelo.jpg" alt="icon de corte de cabelo">
+                    <p class="servico-descricao">Na tesoura ou máquina, como o cliente preferir</p>
+					<p class="servico-preco">R$ 20,00</p>
+                </li>
+                <li>
+                    <h2>Barba</h2>
+                    <img src="imagens/barba.jpg" alt="icon de barba">
+                    <p class="servico-descricao">Corte e desenho profissional de barba</p>
+					<p class="servico-preco">R$ 12,00</p>
+                </li>
+                <li>
+                    <h2>Cabelo + Barba</h2>
+                    <img src="imagens/cabelo+barba.jpg" alt="icon de corte de cabelo e barba">
+                    <p class="servico-descricao">Pacote completo de cabelo e barba</p>
+					<p class="servico-preco">R$ 27,00</p>
+                </li>
+            </ul>
+            
+        </section>
+
+        <section class="contato">
+            <h2 class="titulo-principal">Entre em contato conosco</h2>
+            <form action="">
+                <label for="nome">Nome e sobrenome</label>
+                <input type="text" name="nome" id="nome" class="input-padrao">
+                <label for="telefone">Telefone</label>
+                <input type="text" name="telefone" id="telefone" placeholder="(00) 12345-6789" class="input-padrao">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="input-padrao">
+                <label for="mensagem">Sua mensagem</label>
+                <textarea name="mensagem" id="mensagem" class="input-padrao" rows="5" cols="50"></textarea>
+
+                <fieldset>
+					<legend>Qual horário prefere ser atendido?</legend>
+					<select>
+						<option>Manhã</option>
+						<option>Tarde</option>
+						<option>Noite</option>
+					</select>
+				</fieldset>
+
+                <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+                <input type="submit" value="Enviar" class="enviar">
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Desnevolvido por Alex Reis</p>
+    </footer>
+</body>
+</html>
